@@ -1,7 +1,9 @@
 <html>
 <body>
 <h2>Very simple language translation and HTML Cleaner for MVC</h2>
-<h3>The library get text of your HTML for translate to all languages configured and clean unnecesary formats one on the fly.</h3>
+The library <b>get text of your HTML</b> for <b>translate</b> to all languages configured <b>and clean</b> unnecesary formats on the fly.
+
+<hr>
 
 <u>Configuration:</u> <br>
 
@@ -12,9 +14,8 @@
     <add key="DefaultLanguageOfKeys" value="es-ES"/> --> Your default current culture
 ```
 
-
-Implement your custom provider for translations dictionary.<br>
-JSON Default. Create all JSON file by language:<br>
+Implement your custom providers and parsers for translations dictionary.<br>
+JSON is by Default. Create all JSON file by language:<br>
 
 <pre>
 -- ca-ES.json
