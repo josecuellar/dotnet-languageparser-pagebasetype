@@ -32,7 +32,14 @@ JSON is by Default. Create all JSON file by language:<br>
 }
 </pre>
 
-All pending translation save in the same location json files with the next format:
+Specify the language to translate in action controller:
+
+```
+	//System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("ca-ES");
+    System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-GB");
+```
+
+All pending translations not founded, save automatically in the same location to json files with the next format:
 
 <pre>
 -- ca-ES.Pending.json
@@ -46,7 +53,6 @@ All pending translation save in the same location json files with the next forma
   "Ejemplo 1 texto.": "write translation and move element to ca-ES.json",
 }
 </pre>
-
 
 Only need replace in Views\web.config the next line:<br>
 
