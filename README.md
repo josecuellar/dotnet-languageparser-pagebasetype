@@ -1,17 +1,17 @@
 <html>
 <body>
-<h2>Simple Language Translation Parsing And HTML Cleaner for MVC</h2>
+<h2>Very simple language translation and HTML Cleaner for MVC</h2>
+<h3>The library get text of your HTML for translate to all languages configured and clean unnecesary formats one on the fly.</h3>
 
-Configuration: <br>
+<u>Configuration:</u> <br>
 
-<code>
+<pre>
     <add key="TranslateEnabled" value="true"/> -> Enable text translation on the fly
     <add key="ClearCommentsAndUnnecesaryFormat" value="true"/> -> Clear and compress HTML
     <add key="SavePendingTranslations" value="true"/> --> Save pending text translations
     <add key="DefaultLanguageOfKeys" value="es-ES"/> --> Your default current culture
-</code>
+</pre>
 
-The library get text of your HTML for translate on the fly.<br>
 
 Implement your custom provider for translations dictionary.<br>
 JSON Default. Create all JSON file by language:<br>
@@ -23,34 +23,36 @@ JSON Default. Create all JSON file by language:<br>
 
 <u>Example of content. Keys are the default text in default language culture configured:</u><br>
 
-<code>
+<pre>
 {
   "Inicio": "Inici",
   "Bienvenido": "Benvingut",
   "Proyecto demo": "Projecte demo"
 }
-</code>
+</pre>
 
 All pending translation save in the same location json files with the next format:
 
+<pre>
 -- ca-ES.Pending.json
+</pre>
 
 <u>Example of content:</u>
 
-<code>
+<pre>
 {
   "Ejemplo 1": "<write translation and move element to ca-ES.json>",
   "Ejemplo 1 texto.": "<write translation and move element to ca-ES.json>",
 }
-</code>
+</pre>
 
 
 Only need replace in Views\web.config the next line:<br>
 
-<code>
+<pre>
     <!--<pages pageBaseType="System.Web.Mvc.WebViewPage">-->
     <pages pageBaseType="LanguageParser.PageBaseType">
-</code>
+</pre>
 
 <br><br>
 
