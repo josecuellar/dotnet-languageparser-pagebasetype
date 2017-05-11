@@ -41,18 +41,18 @@ All pending translation save in the same location json files with the next forma
 
 <pre>
 {
-  "Ejemplo 1": "<write translation and move element to ca-ES.json>",
-  "Ejemplo 1 texto.": "<write translation and move element to ca-ES.json>",
+  "Ejemplo 1": "write translation and move element to ca-ES.json",
+  "Ejemplo 1 texto.": "write translation and move element to ca-ES.json",
 }
 </pre>
 
 
 Only need replace in Views\web.config the next line:<br>
 
-<pre>
+```
     <!--<pages pageBaseType="System.Web.Mvc.WebViewPage">-->
     <pages pageBaseType="LanguageParser.PageBaseType">
-</pre>
+```
 
 <br><br>
 
