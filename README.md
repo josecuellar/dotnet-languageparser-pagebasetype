@@ -5,12 +5,12 @@
 
 <u>Configuration:</u> <br>
 
-<pre>
+```
     <add key="TranslateEnabled" value="true"/> -> Enable text translation on the fly
     <add key="ClearCommentsAndUnnecesaryFormat" value="true"/> -> Clear and compress HTML
     <add key="SavePendingTranslations" value="true"/> --> Save pending text translations
     <add key="DefaultLanguageOfKeys" value="es-ES"/> --> Your default current culture
-</pre>
+```
 
 
 Implement your custom provider for translations dictionary.<br>
